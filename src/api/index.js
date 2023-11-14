@@ -6,7 +6,7 @@ export const fetchTransactions = () => {
     setTimeout(() => {
       // Simulate API call success/failure
       if (Math.random() > 0.8) {
-        // 20% chance of failure
+        // ~20% chance of failure
         reject(new Error('Failed to fetch transactions. Please try again.'));
       } else {
         resolve(mockData);
